@@ -1,6 +1,7 @@
 .boxes
 	+clearfix
 	+outer-container
+	margin-left: 20% 
 
 .box
 	background: tint(red, 40%)
@@ -8,9 +9,27 @@
 	+size(100px)
 	float: left
 	+span-columns(2)
+
+body
+	background: tint(pink, 70%)
 	
 
 p 
 	font-family: $helvetica
 	+outer-container 
+
+.grid-item img
+	width: 5em
+	+outer-container
+
+.grid-items
+	+outer-container
+
+.title
+	padding: 20px 0 20px 0
+	font-size: 15px	
+
+h4
+	text-align: center
+
 

@@ -4,6 +4,7 @@
 	<meta charset="utf 8">
 	<title>Example</title>
 	<link rel="stylesheet" href="css/app.css">
+
 </head>
 <body>
 <header class="navigation">
@@ -14,52 +15,126 @@
     <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <div class="nav">
       <ul id="navigation-menu">
-        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-        <li class="nav-link more"><a href="javascript:void(0)">More</a>
+        <li class="nav-link"><a href="javascript:void(0)">Don't Click Me</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">or me</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">I'm Useless too</a></li>
+        <li class="nav-link more"><a href="javascript:void(0)">Open me to be dissappointed</a>
           <ul class="submenu">
-            <li><a href="javascript:void(0)">Submenu Item</a></li>
-            <li><a href="javascript:void(0)">Another Item</a></li>
-            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+            <li><a href="javascript:void(0)">Knock</a></li>
+            <li><a href="javascript:void(0)">Knock</a></li>
+            <li class="more"><a href="javascript:void(0)">Who's there?</a>
               <ul class="submenu">
-                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-                <li><a href="javascript:void(0)">Another Item</a></li>
+                <li><a href="javascript:void(0)">Orange</a></li>
+                <li><a href="javascript:void(0)">Orange Who?</a></li>
               </ul>
             </li>
-            <li class="more"><a href="javascript:void(0)">Another submenu</a>
+            <li class="more"><a href="javascript:void(0)">Orange You Glad</a>
               <ul class="submenu">
-                <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                <li><a href="javascript:void(0)">An Item</a></li>
+                <li><a href="javascript:void(0)">Oh Sh*T</a></li>
+                <li><a href="javascript:void(0)">I never said Banana</a></li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
     </div>
-    <div class="navigation-tools">
-      <div class="search-bar">
-        <div class="search-and-submit">
-          <input type="search" placeholder="Enter Search" />
-          <button type="submit">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
-          </button>
-        </div>
-      </div>
-      <a href="javascript:void(0)" class="sign-up">Sign Up</a>
-    </div>
   </div>
+
+<script>
+  $(document).ready(function() {
+  var menu = $('#navigation-menu');
+  var menuToggle = $('#js-mobile-menu');
+  var signUp = $('.sign-up');
+
+  $(menuToggle).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle(function(){
+      if(menu.is(':hidden')) {
+        menu.removeAttr('style');
+      }
+    });
+  });
+
+  // underline under the active nav item
+  $(".nav .nav-link").click(function() {
+    $(".nav .nav-link").each(function() {
+      $(this).removeClass("active-nav-item");
+    });
+    $(this).addClass("active-nav-item");
+    $(".nav .more").removeClass("active-nav-item");
+  });
+});
+</script>
+
+
 </header>
 
-  <h1>Learing dat Sass</h1>
+  <div class="hero">
+  <div class="hero-inner">
+    <a href="" class="hero-logo"><img src="http://www.creattor.com/files/10/422/kung-fu-panda-iconset-2-icons-screenshots-1.png"
+ alt="Logo Image"></a>
+    <div class="hero-copy">
+      <h1>Sean and Kaitlin are going to China</h1>
+      <p>And they need your help finding the right places to go!</p>  
+    </div>
+    <button>Learn More</button>
+  </div>
+</div>
+
+  <div class="title">
+    <center><h4>Explore the Buttons below to see all the places I've narrowed down for our trip</h4></center>
+  </div>
+
+  <div class="grid-items">
+  <a href="http://www.lonelyplanet.com/china/sichuan/chengdu/sights" class="grid-item">
+    <img src="http://www.todayifoundout.com/wp-content/uploads/2013/10/giant-panda.jpg" alt="">
+    <h1>Changdu</h1>
+    <p>Pandas and Sh*t</p>
+  </a>
+  <a href="http://www.virtualtourist.com/travel/Asia/China/Sichuan_Sheng/Chengdu-1023458/Things_To_Do-Chengdu-Leshans_Giant_Buddha-BR-1.html" class="grid-item grid-item-big grid-item-image">
+    <img src="http://www.china-tour.cn/images/Leshan/Leshan-Giant-Buddha.jpg" alt="">
+    <h1>Changdu</h1>
+    <p>Giant Buddha.</p>
+  </a>
+  <a href="http://en.wikipedia.org/wiki/Sun_Moon_Lake" class="grid-item grid-item-big">
+    <img src="http://4.bp.blogspot.com/-ApikkhnNXfg/UiyT8cg-nSI/AAAAAAAAPZc/9INIiEnktJE/s1600/Sun+Moon+Lake+%25287%2529.jpg" alt="">
+    <h1>Taiwan</h1>
+    <p>Sun Moon Lake</p>
+    <p>You Can Rent Scooters</p>
+  </a>
+  <a href="http://en.wikipedia.org/wiki/Yangshuo_County" class="grid-item">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/d/df/YangshuoFromTvTower.jpg" alt="">
+    <h1>Yangshuo</h1>
+    <p>Robert Says It's a Must-See.</p>
+  </a>
+  <a href="http://en.wikipedia.org/wiki/Shanghai" class="grid-item">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png" alt="">
+    <h1>Shanghai</h1>
+    <p>Robert says it's one of his alltime favorite cities.</p>
+  </a>
+  <a href="http://en.wikipedia.org/wiki/Alishan_National_Scenic_Area" class="grid-item">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+    <h1>Alishan National Park</h1>
+    <p>Another one in Taiwan but I heard it's awesome.</p>
+  </a>
+  <a href="http://www.deathandtaxesmag.com/194811/banksy-arrested-in-london-on-vandalism-charges-identify-revealed/" class="grid-item">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
+    <h1>Mystery Click!</h1>
+    <p>See What Happens!</p>
+  </a>
+</div>
+
+
+  <h4>These are a bunch of pink boxes you can ignore</h4>
+
 
   <div class="boxes">
-  	<div class="box"></div>
-  	<div class="box"></div>
-  	<div class="box"></div>
-  	<div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
   </div>
-  <p>Lapsum artsum   sdlfkasdlkfjaslkfjlaksjflasjdflkajslfjaslfjsdkljflksjflkjs</p>
+
 </body>
 </html>
 
