@@ -1,0 +1,62 @@
+
+
+.clear3 {
+	clear: both;
+}
+
+.body3 {
+	background: #000;
+	font: 12px arial, sans-serif;
+	color: #A7A7A7;
+	padding: 10px 5px;
+	text-align: center;
+}
+/************************** wrappers **********************************/
+
+#wrapper3 {
+	text-align: left;
+	width: 754px;
+	margin: auto;
+	background: url(images/body_bg.gif) repeat-y;
+}
+#body3 {
+	position: relative;
+}
+#body-top3 {
+	background: top left url(images/bar.gif) no-repeat;
+}
+#body-bot3 {
+	background: bottom left url(images/bar.gif) no-repeat;
+}
+/************************** Header **********************************/
+.uniqueh {
+	_padding: 17px 0px 0px 95px;
+	text-align: left;
+}
+
+#person3 {
+	float:right;
+	_padding: 17px 15px 0px 0px;
+}
+
+#about31 {
+	float:left;
+	margin: 00px 0px 0px 0px;
+	width: auto;
+	height: 320px;
+	_overflow: auto;
+	text-align: justify;
+	display:inline;
+}
+
+#about3 p {
+	font-size: 23px;
+}
+
+h2 {
+	text-align: center;
+	font-family: Arial, Consolas, Courier, monospace;
+	font-size: 30px;
+	margin-bottom: 20px;
+
+}
