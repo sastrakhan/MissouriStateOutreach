@@ -1,0 +1,192 @@
+$base-accent-color: green;
+$base-background-color: white;
+$base-font-size: 16px;
+$serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$mainred: rgb(94,0,9);
+$mainyellow: rgb(255, 255, 101);
+$mainpink:rgb(242, 187, 222);
+$maingrey: rgb(228, 226, 227);
+$mainbrown: rgb(146, 105, 87);
+
+
+body {
+      background-image: url("images/treebackground.png");
+}
+
+a {text-decoration: none; color: inherit;}
+
+main {
+  width: 62%;
+  border: 2px solid $mainred;
+  background-image: url("images/paperbackground.jpg");
+  float: left;
+  margin: 7% 0 5% 8%;
+    @include respond-to {
+   margin: 0;
+   width: 98%;
+   }
+
+  @include border-top-radius(1px);
+
+
+    h1.bottomtext{
+      color: darken(white, 5%);
+      margin: 0;
+      position: relative;
+      top: 80%;
+      padding-left: 5%;
+      background: rgb(143,2,34);
+      font-size: 3em;
+
+    }
+    .movepicture {
+    margin: 0 auto 0 20px;
+    }
+
+ } 
+
+ article {
+    background-image: url("images/Restaurants.png");
+      background-size: cover;
+            height: 280px;
+
+ }
+
+.tailored {
+      background-image: url("images/tailored.png");
+      background-size: cover;
+            height: 280px;
+  }
+
+.example {
+  -webkit-columns: 3 150px;
+  -moz-columns: 3 150px;
+  columns: 3 150px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+  padding-right: 2%;
+
+h1 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1.3em;
+  text-align: justify;
+}
+
+.lead {
+  font-variant: small-caps;
+  font-size: 1.3em;
+  text-align: left;
+  font-style: italic;
+}
+}
+
+ 
+
+$cont: 1 2 3; 
+@each $cont2 in $cont {
+  #container#{$cont2} {
+    float:left;
+    width:100%;
+    margin: 0;
+     @include respond-to {
+       margin: 0 0 0 -2%;
+
+     }
+  }
+}
+
+#container1 {
+  background: tint($mainyellow, 65%);
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+
+  h1 {
+  margin: 3% 0 3% 4%;
+  }
+}
+
+
+#container2 {
+  margin: 0 0 0 -1.5%;
+  overflow-y: auto;
+  height: 800px;
+
+h3{
+  margin: 2% auto;
+  font-style: italic;
+  font-size: 1em;
+}
+}
+
+
+@each $cont2 in $cont {
+  #col#{$cont2} {
+    float:left;
+    margin: 0 1% 0% 1%;
+    width: 29%;
+    border-right: 1px solid red;
+    _border-left: 1px solid red;
+    @include filter(grayscale(50%));
+    @include respond-to {
+   @include respond-to {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+   }
+   }
+
+  }
+}
+
+
+#col1 img {
+  max-width: 100%;
+  padding: 0 0 0 0%;
+}
+
+#col1{
+    @include border-color(null null null null);
+    @include border-width(null .5em null null);
+  
+}
+
+#col2{
+    @include padding(null 1% null 1%);
+       @include respond-to {
+  display: none;
+   }
+}
+
+#col2-3{
+  width: 90%;
+  margin-left: 3%;
+}
+.map {
+     text-align:center;
+    display:block;
+    }
+
+
+#col3{
+    @include border-width(null null null .5em);
+    @include border-color(null null null red);
+    @include padding(null null null 1%);
+}
+
+
+
+
+

@@ -1,0 +1,165 @@
+.nav-welcome {
+  float: right;
+  border: 2px solid $mainred;
+  width: 22%;
+  background: $mainbrown;
+  color: darken(white, 5%);
+  padding: 0;
+  margin: $margin-base;
+     @include respond-to {
+   margin: 0;
+   float: none;
+   }
+     ul {
+      list-style-type: none;
+
+    }
+     ul > :first-child {
+    background: $mainpink;
+    padding: 0;
+    margin: 0;
+}
+    h4 {
+    font-size: 1.3em;
+    margin: 0;
+    text-align: center;
+    }
+}
+
+.nav-welcome2 {
+  background-color: lighten($mainbrown, 35%);
+  background-image: url("images/paperbackground.jpg");
+  float: right;
+  width: 22.3%;
+  height: 300px;
+  font-style: underline;
+  padding: 3% 0 0 0;
+  font-size: 1.1em;
+  margin: .5% 6.7% .1% .3%;
+     -moz-box-shadow:    inset 0 0 20px #000000;
+   -webkit-box-shadow: inset 0 0 20px #000000;
+   box-shadow:         inset 0 0 20px #000000;
+     @include respond-to {
+   margin: 0;
+
+   float: none;
+   }
+          ul {
+      list-style-type: none;
+        padding: 0 9% 0 9%;
+        margin: 0 2% 0 2%;
+        font-size: 1.1em;
+    }
+
+    .nospace {
+      margin: 0;
+      padding: -1% 6% 4% 6%;
+    }
+     ul > :nth-child(2n + 1) {
+    _background: saturate($mainyellow, 80%);
+}
+    ul li {
+    padding: 4% 0 0% 4%;
+    border-color: darker($mainyellow, 10%);
+    @include border-style(null null solid null);
+    @include border-width(null null 1.5px null);
+    _background: $mainyellow;
+    margin: 5% 0 0 0;
+    }
+
+    ul li:hover {
+    border-color: $mainyellow;
+    }
+
+    ul li a {
+    text-decoration: none;
+    color: darken($mainbrown, 40%);
+    transition: color .25s;
+
+    }
+
+    ul li a:hover{
+    color:white;
+    }
+
+    h5 {
+    margin:1% 0 0 0;
+    text-align: center;
+    font-style: italic;
+    font-size: .7em;
+    color: $mainred;
+    }
+
+    .fa-star {
+    color: $mainred;
+    }
+}
+
+
+.nav-welcome3 {
+    background-color: lighten($mainbrown, 35%);
+  background-image: url("images/paperbackground.jpg");
+  float: right;
+  _border: 2px solid $mainbrown;
+  width: 22.3%;
+  height: 300px;
+  font-style: underline;
+  padding: 3% 0 0 0;
+  font-size: 1.1em;
+  margin: .5% 6.7% .1% .3%;
+     -moz-box-shadow:    inset 0 0 20px #000000;
+   -webkit-box-shadow: inset 0 0 20px #000000;
+   box-shadow:         inset 0 0 20px #000000;
+     @include respond-to {
+   margin: 0;
+
+   float: none;
+   }
+          ul {
+      list-style-type: none;
+        padding: 3% 9% 0 9%;
+        margin: 0 2% 0 2%;
+        font-size: .9em;
+    }
+
+    .nospace {
+      padding: -1% 6% 4% 6%;
+    }
+     ul > :nth-child(2n + 1) {
+    _background: saturate($mainyellow, 80%);
+}
+    ul li {
+    padding: 7% 0 0% 4%;
+    border-color: darker($mainyellow, 10%);
+    @include border-style(null null solid null);
+    @include border-width(null null 2px null);
+    _background: $mainyellow;
+    }
+
+    ul li:hover {
+    border-color: $mainyellow;
+        transition: color .25s;
+
+    }
+
+    ul li a {
+    text-decoration: none;
+    color: darken($mainbrown, 40%);
+    transition: color .25s;
+    }
+
+
+
+    ul li a:hover{
+    color:white;
+    }
+
+    h5 {
+    margin:1% 0 0 0;
+    text-align: center;
+    font-style: italic;
+    font-size: .7em;
+    color: $mainred;
+    }
+   
+}
