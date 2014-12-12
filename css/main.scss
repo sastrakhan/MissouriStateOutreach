@@ -18,12 +18,13 @@ a {text-decoration: none; color: inherit;}
 main {
   width: 62%;
   border: 2px solid $mainred;
-  background-image: url("images/paperbackground.jpg");
+  background-image: url("images/paperbackground3.jpg");
+  background-size: cover;
   float: left;
   margin: 7% 0 5% 8%;
     @include respond-to {
-   margin: 0;
-   width: 98%;
+    margin: 0;
+    width: 100%;
    }
 
   @include border-top-radius(1px);
@@ -43,7 +44,7 @@ main {
     margin: 0 auto 0 20px;
     }
 
- } 
+ }
 
  article {
     background-image: url("images/Restaurants.png");
@@ -55,8 +56,26 @@ main {
 .tailored {
       background-image: url("images/tailored.png");
       background-size: cover;
-            height: 280px;
+      height: 280px;
   }
+
+.religious {
+      background-image: url("images/muslim3.png");
+      background-size: cover;
+      height: 280px;
+  }
+.farmers {
+      background-image: url("images/farmers.png");
+      background-size: cover;
+      height: 280px;
+}
+
+.bus {
+      background-image: url("images/bus.png");
+      background-size: cover;
+      height: 280px;
+      background-position: 0% 60%;
+}
 
 .example {
   -webkit-columns: 3 150px;
@@ -89,9 +108,9 @@ p {
 }
 }
 
- 
 
-$cont: 1 2 3; 
+
+$cont: 1 2 3;
 @each $cont2 in $cont {
   #container#{$cont2} {
     float:left;
@@ -105,13 +124,11 @@ $cont: 1 2 3;
 }
 
 #container1 {
-  background: tint($mainyellow, 65%);
-  border: 1px solid black;
   width: 100%;
-  height: 100%;
+  height: 110%;
   padding: 0;
   margin: 0;
-  height: 300px;
+  opacity: .9;
 
   h1 {
   margin: 3% 0 3% 4%;
@@ -119,15 +136,17 @@ $cont: 1 2 3;
 }
 
 
+
 #container2 {
   margin: 0 0 0 -1.5%;
-  overflow-y: auto;
+  overflow: scroll;
   height: 800px;
 
 h3{
   margin: 2% auto;
   font-style: italic;
   font-size: 1em;
+  color: darken (#8493bf, 10%);
 }
 }
 
@@ -137,8 +156,8 @@ h3{
     float:left;
     margin: 0 1% 0% 1%;
     width: 29%;
-    border-right: 1px solid red;
-    _border-left: 1px solid red;
+    _border-right: 1px solid red;
+    border-left: 1px solid red;
     @include filter(grayscale(50%));
     @include respond-to {
    @include respond-to {
@@ -158,9 +177,9 @@ h3{
 }
 
 #col1{
-    @include border-color(null null null null);
-    @include border-width(null .5em null null);
-  
+ //   @include border-color(null null null null);
+ //   @include border-width(null .5em null null);
+
 }
 
 #col2{
@@ -181,8 +200,8 @@ h3{
 
 
 #col3{
-    @include border-width(null null null .5em);
-    @include border-color(null null null red);
+//    @include border-width(null null null .5em);
+//    @include border-color(null null null red);
     @include padding(null null null 1%);
 }
 

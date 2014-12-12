@@ -27,11 +27,11 @@
 }
 
 .nav-welcome2 {
-  background-color: lighten($mainbrown, 35%);
+//  background-color: lighten($mainbrown, 35%);
   background-image: url("images/paperbackground.jpg");
   float: right;
   width: 22.3%;
-  height: 300px;
+  height: 320px;
   font-style: underline;
   padding: 3% 0 0 0;
   font-size: 1.1em;
@@ -102,7 +102,7 @@
   float: right;
   _border: 2px solid $mainbrown;
   width: 22.3%;
-  height: 300px;
+  height: 330px;
   font-style: underline;
   padding: 3% 0 0 0;
   font-size: 1.1em;
@@ -161,5 +161,5 @@
     font-size: .7em;
     color: $mainred;
     }
-   
+
 }

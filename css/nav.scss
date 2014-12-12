@@ -59,7 +59,7 @@ body {
 
 header {
   width: 100%;
-  height: 60px;
+  height: 70px;
   background: rgb(94,0,9); /* Old browsers */
 background: -moz-linear-gradient(top,  rgb(109,0,25) 0%, rgb(143,2,34) 78%, rgb(94,0,9) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(109,0,25)), color-stop(78%,rgb(143,2,34)), color-stop(100%,rgb(169,3,41))); /* Chrome,Safari4+ */
@@ -69,11 +69,28 @@ background: -ms-linear-gradient(top,  rgb(109,0,25) 0%,rgb(143,2,34) 78%,rgb(169
 background: linear-gradient(to bottom,  rgb(109,0,25) 0%,rgb(143,2,34) 78%,rgb(169,3,41) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0019', endColorstr='#a90329',GradientType=0 ); /* IE6-9 */
 
+  .innerheader {
+    width: 70%;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 1%;
+    background: url("images/lnu.png"), url("images/msu.png");
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;;
+    h3 {
+    margin:0;
+    color: darken(white, 12%);
+    font-weight: normal;
+
+    }
+  }
+
 }
 
 nav {
   margin: $margin-base;
-  .table { display: table;   
+  .table { display: table;
   margin: 0 auto;}
   z-index: 2;
   position: relative;
@@ -85,7 +102,7 @@ nav ul li {
   border: 1px solid black;
   width: 200px;
   font-size: 16px;
-  padding: 0 0 0 0; 
+  padding: 0 0 0 0;
   border-radius: 10px;
   display: inline;
 }
@@ -96,7 +113,7 @@ nav ul li a {
   padding: 5% 0% 5% 0%;
   font-weight: bold;
   text-decoration: none;
-  text-align: center; 
+  text-align: center;
   color: white;
   border-radius: 10px;
 
@@ -130,9 +147,9 @@ nav ul li a:hover, nav ul li.active a {
 
   nav ul li a {
     padding: 8px 0;
-    font-size: 16px; 
+    font-size: 16px;
     }
-   } 
+   }
 
 
 
@@ -190,6 +207,11 @@ nav ul li a:hover, nav ul li.active a {
 
 }
 
+.cd-tabs.wide {
+  width: 100%;
+  margin: 0;
+}
+
 
 .cd-tabs-navigation li {
   float: left;
@@ -198,10 +220,10 @@ nav ul li a:hover, nav ul li.active a {
   _background-color: $maingrey;     //HERE'S THE LI FIXTURES
   list-style-type: none;
 
-@include respond-to {            // HERE ARE THE SETTINGS FOR MOBILE 
+@include respond-to {            // HERE ARE THE SETTINGS FOR MOBILE
 float:none;
 margin-bottom: 5%;
-  
+
 }
 
 }
@@ -226,11 +248,11 @@ margin-bottom: 5%;
   .cd-tabs-navigation a.selected {
     box-shadow: inset 0 2px 0 #f05451;
   }
-  
+
 }
 
 .cd-tabs-content {
-  _background: #ffffff;   //BACKGROUND TO THE ACTUAL TEXT
+  _ackground: #ffffff;   //BACKGROUND TO THE ACTUAL TEXT
 }
 .cd-tabs-content li {
   display: none;
@@ -249,7 +271,7 @@ margin-bottom: 5%;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.6;
-  color: #8493bf;
+  color: darken(#8493bf, 30%);
   margin-bottom: 2em;
 }
 @media only screen and (min-width: 768px) {
@@ -315,4 +337,4 @@ margin-bottom: 5%;
 
 
 
-   
+

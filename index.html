@@ -3,66 +3,166 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>MSU-LNU Outreach Page</title>
-  <link rel="stylesheet" href="css/bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <link rel="stylesheet"type="text/css" href="css/app.css">
   <link rel="stylesheet"type="text/css" href="css/footer.css">
   <link rel="stylesheet" href="css/font-awesome-4.2.0 3/css/font-awesome.min.css">
-  <script src="js/prefixfree.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick.css"/>
+  <!-- <script src="js/prefixfree.min.js"></script>  Figure out how to use this later -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="bower_components/slick.js/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.your-class').slick({
+                  slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: false,
+                dots: true,
+            });
+        });
+
+    </script>
 </head>
   <body>
 
+   <!-- ASK NICK -->
+
+
+            <!-- Script for carousal -->
+            <!-- Script for carousal -->
+
+
     <header>
-        <h3>Header</h3>
+          <div class="innerheader">
+            <h3>国际业务内容的LNU - MSU学院</h3>
+            <h3>LNU-MSU College of International Busines</h3>
+          </div>
     </header>
+
 
 
     <nav>
       <div class="table">
       <ul>
         <li class = "active"><a href ="#">Home</a> </li>
-        <li> <a href ="#">Transportation</a> </li>
+        <li> <a href ="maps.html">Transportation</a> </li>
         <li> <a href ="#">Chinese Phrases</a> </li>
-        <li> <a href ="#">Online Resources </a> </li>
+        <li> <a href ="welcome.html">Online Resources </a> </li>
       </ul>
       </div>
-    </nav> 
+    </nav>
 
-    <!-- Makes this have the jumbotron effect of changing images -->
-
-<div class="hero">
-  <div class="hero-inner">
-    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image"></a>
-    <div class="hero-copy">
-      <h1>Welcome to the LNU-MSU International Page</h1>
-      <p>Scroll down to find everything you will need to make a seamless transition into our home</p>  
+    <div class="newhero">
+      <h2>Welcome to the LNU-MSU International Page</h2>
+          <div class="your-class">
+            <div><img src ="css/images/xinghaisqr.png" height="320" width ="500"/></div>
+             <div><img src ="css/images/binhailu.png" height="320" width ="500"/></div>
+              <div><img src ="css/images/panda.jpg" height="320" width ="500"/></div>
+             <div><img src ="css/images/binhailu.png" height="320" width ="500"/></div>
+             <div><img src ="css/images/blkdalian.jpg" height="320" width ="500"/></div>
+          </div>
+          <div class="heromiddle">
+           <a href="#targetbutton"><button>Learn More about LNU-MSU</button></a>
+        </div>
     </div>
-    <button>Learn More about LNU-MSU</button>
-  </div>
+
+
+<div class="quote-block group">
+  <h1 class="quote"><i class="fa fa-quote-left fa-1x"></i>Where diversity is celebrated...</h1>
 </div>
-
-
+      <h3 class="quote1">and cultures are embraced<i class="fa fa-quote-right"></i></h3>
+      <a name="targetbutton"></a>
 <div class="gallery">
   <div id="item-1" class="control-operator"></div>
   <div id="item-2" class="control-operator"></div>
   <div id="item-3" class="control-operator"></div>
 
   <figure class="item">
-    <h1>item 1</h1>
-  </figure>  
+    <h1 class="dalianwelcome1">On behalf of everyone here at MSU-LNU</h1>
+          <h2 class="dalianwelcome">Welcome to Dalian!</h2>
+          <h3>We are so happy you could be with us and part of our team.</h3>
+          <p>Please explore the resources section to get a better understanding of
+          living in Dalian and see some of the other goodies we've prepared for you.</p>
+
+  </figure>
+
   <figure class="item">
-    <h1>item 2</h1>
-  </figure>  
+      <h1 class="dalianwelcome1">Please fill out the accompanying form</h1>
+
+            <div id="col2-3">
+                <h3>Title for the article</h3>
+                <p class="lead">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci </p>
+
+                <h2>Maybe another title here</h2>
+
+                <div class="map">
+                <img src="http://wikitravel.org/upload/shared//thumb/8/88/Zhongshan_central_map.png/350px-Zhongshan_central_map.png">
+                </div>
+
+
+
+  </figure>
     <figure class="item">
-    <h1>item 3</h1>
-  </figure>    
+
+     <div id="redstripe" class="group">
+    <h4>The primary locations of everything you'll miss from America</h4>
+    <div id="myinner">
+     <div id="smallgroup">
+      <div class = "section">
+        <h3>Banking</h3>
+        <img src ="http://wings.buffalo.edu/intlservices/images/bank.jpg"height="120" width ="200"/>
+        <p>David can help you.</p>
+       </div>
+       <div class = "section">
+         <h3>Cell Phone</h3>
+         <img src ="http://www.86callchina.com/images/china_telecom.gif" height="120" width ="200"/>
+         <p>Finding a phone will require taobao.</p>
+      </div>
+      <div class = "section">
+        <h3><a href="maps.html">Getting Around</a></h3>
+        <img src ="https://mts0.google.com/vt/data=NQACIhHAUfXazJJhQuoTJc65qDMhpMsu9cPo216fs7BcLNu_58rgxzoSq-0vz9uvRVqwhBSIQGYzKCHxKjnd_kR_Gv4JCkrdEuzOMLA" height="120" width ="200"/>
+        <p>Finding a phone will require taobao.</p>
+      </div>
+      <div class = "section">
+        <h3>Internet</h3>
+        <img src ="http://www.onbile.com/info/wp-content/uploads/2012/12/china-unicom3-e1356602330129.png" height="120" width ="200"/>
+        <p>Finding a phone will require taobao.</p>
+      </div>
+
+           <div class = "section">
+        <h3>Finding Home Supplies</h3>
+        <img src ="css/images/oven.jpg" height="120" width ="200"/>
+        <p>Finding a phone will require taobao.</p>
+      </div>
+      <div class = "section">
+        <h3><a href="welcome.html">Restaurants & Entertainment</a></h3>
+        <img src ="css/images/restaurant.jpg" height="120" width ="200"/>
+        <p>Finding a phone will require taobao.</p>
+      </div>
+      <div class = "section">
+        <h3>Hard to Find Items</h3>
+        <img src ="css/images/butter.jpg" height="120" width ="200"/>
+        <p>Finding a phone will require taobao.</p>
+      </div>
+      <div class = "section">
+        <h3>Sightseeing</h3>
+        <img src ="css/images/panda.jpg" height="120" width ="200"/>
+        <p>Finding a phone will require taobao.</p>
+      </div>
+
+  </figure>
 
   <div class="controls">
-    <a class="control-item" href="#item-1">•</a>
-    <a class="control-item" href="#item-2">•</a>
-    <a class="control-item" href="#item-3">•</a>
+    <a class="control-item" href="#item-1">Welcome</a>
+    <a class="control-item" href="#item-2">Contact</a>
+    <a class="control-item" href="#item-3">Resources</a>
   </div>
 </div>
 
+<!--         THIS IS THE OLD MENU
 
     <div id="redstripe" class="group">
       <h2>Resources</h2>
@@ -72,8 +172,8 @@
       <div class = "section">
         <h3>Banking</h3>
         <img src ="http://wings.buffalo.edu/intlservices/images/bank.jpg"height="120" width ="200"/>
-        <p>David can help you.</p> 
-       </div> 
+        <p>David can help you.</p>
+       </div>
        <div class = "section">
          <h3>Cell Phone</h3>
          <img src ="http://www.86callchina.com/images/china_telecom.gif" height="120" width ="200"/>
@@ -83,7 +183,7 @@
         <h3>Getting Around</h3>
         <img src ="https://mts0.google.com/vt/data=NQACIhHAUfXazJJhQuoTJc65qDMhpMsu9cPo216fs7BcLNu_58rgxzoSq-0vz9uvRVqwhBSIQGYzKCHxKjnd_kR_Gv4JCkrdEuzOMLA" height="120" width ="200"/>
         <p>Finding a phone will require taobao.</p>
-      </div> 
+      </div>
       <div class = "section">
         <h3>Internet</h3>
         <img src ="http://www.onbile.com/info/wp-content/uploads/2012/12/china-unicom3-e1356602330129.png" height="120" width ="200"/>
@@ -109,11 +209,11 @@
         <h3>Sightseeing</h3>
         <img src ="css/images/panda.jpg" height="120" width ="200"/>
         <p>Finding a phone will require taobao.</p>
-      </div> 
+      </div>
  </div>
  </div>
  </div>
-
+-->
 
 
 
@@ -138,9 +238,9 @@
 </footer>
 
 
-  </body> 
-  </html>   
-<!-- include categories like hard to find items, language tools, restaurants, shopping for products, internation getaways, 
- 
-    
+  </body>
+  </html>
+<!-- include categories like hard to find items, language tools, restaurants, shopping for products, internation getaways,
+
+
 
